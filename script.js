@@ -14,43 +14,80 @@ mainNav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Фильтр карточек направлений
+// Фильтр направлений
 const filterButtons = document.querySelectorAll('.filter');
 const destinationCards = document.querySelectorAll('.destination-card');
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
     const selected = button.dataset.filter;
-    filterButtons.forEach(item => item.classList.toggle('active', item === button));
+
+    filterButtons.forEach(item =>
+      item.classList.toggle('active', item === button)
+    );
+
     destinationCards.forEach(card => {
-      card.hidden = selected !== 'all' && card.dataset.category !== selected;
+      card.hidden =
+        selected !== 'all' &&
+        card.dataset.category !== selected;
     });
   });
 });
 
-// Год в подвале
-document.getElementById('year').textContent = new Date().getFullYear();
+// Текущий год
+document.getElementById('year').textContent =
+  new Date().getFullYear();
 
-// Форма работает без сервера: открывает почтовое приложение пользователя.
-// Перед публикацией укажи реальную почту в переменной CONTACT_EMAIL.
-const CONTACT_EMAIL = 'cte4689@gmail.com';
+// EmailJS
+const EMAILJS_PUBLIC_KEY = '2trv3YbLGeSxu74qz';
+const EMAILJS_SERVICE_ID = 'service_fjk3fsj';
+const EMAILJS_TEMPLATE_ID = 'template_9u2y1dh';
 
-document.getElementById('contactForm').addEventListener('submit', event => {
+emailjs.init({
+  publicKey: EMAILJS_PUBLIC_KEY
+});
+
+const contactForm = document.getElementById('contactForm');
+const formHint = document.getElementById('formHint');
+const submitButton = contactForm.querySelector('button[type="submit"]');
+
+contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-  const form = event.currentTarget;
-  if (!form.reportValidity()) return;
 
-  const data = new FormData(form);
-  const subject = encodeURIComponent('Заявка с сайта Центр Блеск');
-  const body = encodeURIComponent(
-    `Имя: ${data.get('name')}\nКонтакт: ${data.get('contact')}\nПожелания: ${data.get('message')}`
-  );
+  if (!contactForm.reportValidity()) return;
 
-  if (CONTACT_EMAIL) {
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-  } else {
-    document.getElementById('formHint').textContent =
-      'Форма заполнена. Чтобы отправка работала, добавьте свою почту в CONTACT_EMAIL в файле script.js.';
-    document.getElementById('formHint').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  const data = new FormData(contactForm);
+
+  const templateParams = {
+    name: data.get('name'),
+    contact: data.get('contact'),
+    message: data.get('message')
+  };
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Отправляем...';
+  formHint.textContent = 'Отправляем заявку...';
+
+  try {
+    await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      templateParams
+    );
+
+    contactForm.reset();
+    formHint.textContent =
+      'Заявка успешно отправлена! Спасибо, скоро с тобой свяжутся.';
+
+  } catch (error) {
+    console.error('EmailJS error:', error);
+
+    formHint.textContent =
+      'Ошибка отправки. Попробуйте ещё раз немного позже.';
+
+  } finally {
+    submitButton.disabled = false;
+    submitButton.innerHTML =
+      'Отправить заявку <span>↗</span>';
   }
 });
