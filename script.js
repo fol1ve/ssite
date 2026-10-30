@@ -33,7 +33,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Форма работает без сервера: открывает почтовое приложение пользователя.
 // Перед публикацией укажи реальную почту в переменной CONTACT_EMAIL.
-const CONTACT_EMAIL = '';
+const CONTACT_EMAIL = 'cte4689@gmail.com';
 
 document.getElementById('contactForm').addEventListener('submit', event => {
   event.preventDefault();
