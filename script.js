@@ -378,6 +378,16 @@ const translations = {
     'Отправляем заявку…': 'Sending your request…',
     'Заявка отправлена! Спасибо, скоро свяжемся.': 'Your request has been sent! Thank you. We will contact you soon.',
     'Не удалось отправить заявку. Проверь подключение и попробуй ещё раз.': 'Could not send your request. Check your connection and try again.'
+    'Куда хочешь поехать?': 'Where would you like to go?',
+    'Выбери направление': 'Choose a destination',
+    'Выбери свой': 'Choose your',
+    'горизонт.': 'horizon.',
+    'Море': 'Sea',
+    'Города': 'Cities',
+    'Природа': 'Nature',
+    'Все места': 'All destinations',
+    'Не выбрано': 'Not selected',
+    'Другое направление': 'Another destination',
   },
 
   zh: {
