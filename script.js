@@ -670,6 +670,8 @@ const translationTargets = {
     '.settings-links a:nth-child(4)': 'faq',
     '.settings-links a:nth-child(5)': 'reviews',
     '.settings-links a:nth-child(6)': 'allDirections',
+    '.settings-links a:nth-child(7)': 'nav2',
+    '.settings-links a:nth-child(8)': 'nav3',
     '.settings-links a:nth-child(9)': 'contactsMenu',
 
     '.main-nav a:nth-child(1)': 'nav1',
@@ -789,8 +791,8 @@ const translationTargets = {
 
     '#about .eyebrow': 'aboutEyebrow',
     '#about h2': 'aboutTitle',
-    '#about .about-text:nth-of-type(1)': 'aboutText1',
-    '#about .about-text:nth-of-type(2)': 'aboutText2',
+    '#about .about-text:nth-of-type(2)': 'aboutText1',
+    '#about .about-text:nth-of-type(3)': 'aboutText2',
     '#about .button': 'aboutButton',
     '.about-image-caption': 'aboutCaption',
     '.about-signature': 'aboutSignature',
@@ -1052,7 +1054,8 @@ function applyLanguage(lang) {
     });
 
     translateOptions(lang);
-    translateFilters(lang);
+    // Фильтры уже переводятся через translationTargets.
+    // Повторный перевод отдельной функцией ломал возврат EN/ZH → RU.
     translatePlaceholders(lang);
 
     // Заголовок и описание страницы.
