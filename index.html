@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Центр Блеск — путешествия, которые запоминаются. Подбираем необычные направления по доступным ценам.">
+  <meta name="theme-color" content="#f6f2e9">
+  <title>Центр Блеск — путешествия ближе, чем кажется</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span>ЦЕНТР ПУТЕШЕСТВИЙ</span><span>МАРШРУТЫ, КОТОРЫЕ ОСТАЮТСЯ С ТОБОЙ</span></div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Центр Блеск — на главную">
+      <span class="logo-mark">Б</span><span class="logo-name">центр<br><b>блеск</b></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#destinations">Направления</a>
+      <a href="#about">О компании</a>
+      <a href="#journal">Журнал</a>
+      <a href="#contacts" class="nav-contact">Связаться <span>↗</span></a>
+    </nav>
+    <div class="header-tools">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть настройки и меню" aria-expanded="false" aria-controls="settingsPanel"><span></span><span></span><span></span></button>
+      <div class="settings-panel" id="settingsPanel" hidden>
+        <div class="settings-top"><strong>Меню и настройки</strong><button class="settings-close" type="button" aria-label="Закрыть меню">×</button></div>
+        <label class="language-label" for="languageSelect">Язык сайта</label>
+        <select id="languageSelect" class="language-select">
+          <option value="ru">Русский</option><option value="en">English</option><option value="zh">中文</option>
+        </select>
+        <div class="settings-links">
+          <a href="#deals">Горящие предложения</a><a href="#tourFinder">Подобрать тур</a><a href="#travelTypes">Виды отдыха</a><a href="#faq">Частые вопросы</a><a href="#reviews">Отзывы</a>
+          <a href="#destinations">Все направления</a><a href="#about">О компании</a><a href="#journal">Журнал</a><a href="#contacts">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> НЕ ЖДИ ИДЕАЛЬНОГО МОМЕНТА</p>
+        <h1>Мир больше,<br>чем кажется<span>.</span></h1>
+        <p class="hero-lead">Необычные места, новые знакомства и впечатления, которые не помещаются в фотографии. Поможем выбрать поездку без лишних затрат.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#destinations">Выбрать направление <span>↗</span></a>
+          <a class="text-link" href="#about">Узнать о нас <span>↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-star">✳</span><span>Путешествуй смелее.<br>Планируй разумно.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1400&q=85" alt="Путешественник смотрит на горный пейзаж">
+        <div class="photo-label"><span>01 / ВПЕЧАТЛЕНИЯ</span><span>ОТКРЫВАЙ НОВОЕ</span></div>
+        <div class="round-stamp"><span>ТВОЁ СЛЕДУЮЩЕЕ</span><b>ПРИКЛЮЧЕНИЕ</b><span>УЖЕ БЛИЖЕ ✳</span></div>
+      </div>
+      <div class="hero-bottom"><span>БРАТЬ С СОБОЙ ТОЛЬКО ЛЮБОПЫТСТВО</span><span>↓ ЛИСТАЙ НИЖЕ</span></div>
+    </section>
+
+    <section class="intro-strip">
+      <p>ПУТЕШЕСТВИЯ — ЭТО НЕ РОСКОШЬ</p>
+      <p>Это способ увидеть, почувствовать и понять чуть больше.</p>
+      <span class="strip-symbol">✳</span>
+    </section>
+
+    <section class="destinations section" id="destinations">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> КУДА ОТПРАВИМСЯ?</p><h2>Выбирай свой<br><em>горизонт.</em></h2></div>
+        <p class="heading-aside">Собрали несколько идей для тех, кому хочется сменить привычный маршрут. Это только начало — найдём направление под твой запрос.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Фильтр направлений">
+        <button class="filter active" data-filter="all">Все места <span>06</span></button>
+        <button class="filter" data-filter="sea">Море</button>
+        <button class="filter" data-filter="city">Города</button>
+        <button class="filter" data-filter="nature">Природа</button>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card card-large" data-category="sea">
+          <a href="#contacts" class="destination-image"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85" alt="Бирюзовая вода и тропический остров"><span class="image-number">01</span><span class="image-arrow">↗</span></a>
+          <div class="destination-meta"><span>МАЛЬДИВЫ</span><span>МОРЕ / ОТДЫХ</span></div>
+          <h3>Острова на паузе</h3><p>Тёплая вода, белый песок и время, которое наконец принадлежит тебе.</p>
+        </article>
+        <article class="destination-card" data-category="city">
+          <a href="#contacts" class="destination-image"><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=85" alt="Улицы большого города вечером"><span class="image-number">02</span><span class="image-arrow">↗</span></a>
+          <div class="destination-meta"><span>СТАМБУЛ</span><span>ГОРОД</span></div>
+          <h3>На стыке миров</h3><p>Узкие улочки, шумные рынки и чай с видом на Босфор.</p>
+        </article>
+        <article class="destination-card" data-category="nature">
+          <a href="#contacts" class="destination-image"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85" alt="Высокие горы в облаках"><span class="image-number">03</span><span class="image-arrow">↗</span></a>
+          <div class="destination-meta"><span>АЛТАЙ</span><span>ПРИРОДА</span></div>
+          <h3>Ближе к тишине</h3><p>Горные дороги, прозрачные реки и простор вокруг.</p>
+        </article>
+        <article class="destination-card" data-category="city">
+          <a href="#contacts" class="destination-image"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="Живописная дорога среди зелёных холмов"><span class="image-number">04</span><span class="image-arrow">↗</span></a>
+          <div class="destination-meta"><span>ГРУЗИЯ</span><span>ГОРОД / ГОРЫ</span></div>
+          <h3>Вкус долгих вечеров</h3><p>Гостеприимство, старые кварталы и дороги с красивыми видами.</p>
+        </article>
+        <article class="destination-card" data-category="sea">
+          <a href="#contacts" class="destination-image"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85" alt="Морской берег и волны"><span class="image-number">05</span><span class="image-arrow">↗</span></a>
+          <div class="destination-meta"><span>БАЛИ</span><span>МОРЕ / ОСТРОВ</span></div>
+          <h3>Другой ритм</h3><p>Зелёные террасы, океан и утро без спешки.</p>
+        </article>
+        <article class="destination-card" data-category="nature">
+          <a href="#contacts" class="destination-image"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="Озеро среди гор и леса"><span class="image-number">06</span><span class="image-arrow">↗</span></a>
+          <div class="destination-meta"><span>КАРЕЛИЯ</span><span>ПРИРОДА</span></div>
+          <h3>Недалеко от дома</h3><p>Лесные тропы, озёра и свежий воздух на выходные.</p>
+        </article>
+      </div>
+      <div class="catalog-foot"><span>НЕ НАШЁЛ СВОЁ МЕСТО?</span><a href="#contacts" class="text-link">Расскажем о других вариантах <span>↗</span></a></div>
+    </section>
+
+    <section class="deals-section section" id="deals">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> ПОДБОРКА ДЛЯ ВДОХНОВЕНИЯ</p><h2>Идеи для <em>отпуска.</em></h2></div><p class="heading-aside">Несколько направлений, с которых можно начать планирование. Итоговая цена зависит от дат и условий поездки.</p></div>
+      <div class="deals-grid">
+        <article class="deal-card"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80" alt="Тропический остров"><div class="deal-content"><span class="deal-tag">МОРСКОЙ ОТДЫХ</span><h3>Мальдивы</h3><p>Спокойный отдых у океана и красивые острова.</p><a href="#tourFinder" class="text-link">Узнать условия <span>↗</span></a></div></article>
+        <article class="deal-card"><img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=900&q=80" alt="Стамбул"><div class="deal-content"><span class="deal-tag">ГОРОДСКОЕ ПУТЕШЕСТВИЕ</span><h3>Стамбул</h3><p>Архитектура, прогулки и новые вкусы.</p><a href="#tourFinder" class="text-link">Узнать условия <span>↗</span></a></div></article>
+        <article class="deal-card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Горный пейзаж"><div class="deal-content"><span class="deal-tag">ПРИРОДА</span><h3>Алтай</h3><p>Горы, озёра и маршруты на свежем воздухе.</p><a href="#tourFinder" class="text-link">Узнать условия <span>↗</span></a></div></article>
+      </div>
+      <p class="section-disclaimer">Это примеры направлений, а не подтверждённые акции или фиксированные цены. Актуальную стоимость уточним по запросу.</p>
+    </section>
+
+    <section class="tour-finder" id="tourFinder">
+      <div class="tour-finder-copy"><p class="eyebrow"><span class="eyebrow-line"></span> НЕ ЗНАЕШЬ, С ЧЕГО НАЧАТЬ?</p><h2>Подберём поездку<br><em>под твой ритм.</em></h2><p>Укажи несколько деталей — заявка придёт нам на почту, и мы сможем обсудить подходящие варианты.</p></div>
+      <form class="finder-form" id="tourFinderForm">
+        <label for="tourDestination">Куда хочешь поехать?</label><select id="tourDestination" name="destination" required><option value="">Выбери направление</option><option>Море</option><option>Город</option><option>Горы и природа</option><option>Пока не решил(а)</option></select>
+        <div class="finder-row"><div><label for="tourPeople">Сколько путешественников?</label><select id="tourPeople" name="people" required><option value="1">1 человек</option><option value="2" selected>2 человека</option><option value="3">3 человека</option><option value="4+">4 и более</option></select></div><div><label for="tourBudget">Примерный бюджет</label><select id="tourBudget" name="budget" required><option value="">Выбери бюджет</option><option>До 100 000 ₽</option><option>100 000–200 000 ₽</option><option>200 000–350 000 ₽</option><option>Более 350 000 ₽</option><option>Нужно обсудить</option></select></div></div>
+        <label for="tourDates">Когда планируешь поездку?</label><input id="tourDates" name="dates" type="text" placeholder="Например, июль или даты пока неизвестны">
+        <label for="tourName">Твоё имя</label><input id="tourName" name="name" type="text" placeholder="Как к тебе обращаться?" required>
+        <label for="tourContact">Телефон или почта</label><input id="tourContact" name="contact" type="text" placeholder="Как с тобой связаться?" required>
+        <button class="button button-dark" type="submit">Отправить параметры <span>↗</span></button><p class="form-hint" id="finderHint">Отправка заявки не означает бронирование тура.</p>
+      </form>
+    </section>
+
+    <section class="travel-types section" id="travelTypes">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> КАКОЙ ОТДЫХ ТЕБЕ БЛИЖЕ?</p><h2>Выбери свой <em>формат.</em></h2></div></div>
+      <div class="travel-type-grid"><a href="#tourFinder"><span>01</span><b>У моря</b><small>Пляжи, острова и спокойный отдых</small><i>↗</i></a><a href="#tourFinder"><span>02</span><b>В городе</b><small>Архитектура, музеи и прогулки</small><i>↗</i></a><a href="#tourFinder"><span>03</span><b>На природе</b><small>Горы, озёра и свежий воздух</small><i>↗</i></a><a href="#tourFinder"><span>04</span><b>Вдвоём или семьёй</b><small>Маршрут под вашу компанию</small><i>↗</i></a></div>
+    </section>
+
+    <section class="faq-section section" id="faq">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> ПЕРЕД ПОЕЗДКОЙ</p><h2>Частые <em>вопросы.</em></h2></div><p class="heading-aside">Коротко отвечаем на то, о чём обычно спрашивают перед планированием путешествия.</p></div>
+      <div class="faq-list">
+        <details><summary>Сколько стоит подбор поездки?<span>+</span></summary><p>Стоимость самого тура зависит от направления, дат, состава путешественников и выбранных условий. Оставь заявку — обсудим варианты.</p></details>
+        <details><summary>Можно ли подобрать поездку на двоих или с детьми?<span>+</span></summary><p>Да. Укажи количество путешественников и пожелания в форме — это поможет подобрать подходящий формат.</p></details>
+        <details><summary>Что входит в стоимость тура?<span>+</span></summary><p>Состав зависит от конкретного предложения. Перед выбором важно отдельно проверить перелёт, проживание, питание, трансферы и дополнительные услуги.</p></details>
+        <details><summary>Если я ещё не выбрал(а) направление?<span>+</span></summary><p>Это нормально. Можно указать желаемый формат отдыха и примерный бюджет — начнём с нескольких идей.</p></details>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews"><div><p class="eyebrow"><span class="eyebrow-line"></span> ВАЖНО ДОВЕРИЕ</p><h2>Истории путешествий<br><em>настоящих людей.</em></h2><p>Здесь будут размещаться отзывы реальных клиентов с их согласия. Мы не публикуем вымышленные оценки и впечатления.</p><a class="button button-dark" href="#contacts">Оставить обращение <span>↗</span></a></div><div class="reviews-note"><span>✳</span><b>Ваш отзыв может стать<br>частью этой истории.</b></div></section>
+
+    <section class="about section" id="about">
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85" alt="Друзья путешествуют вместе"><span class="about-image-caption">ХОРОШИЕ ИСТОРИИ НАЧИНАЮТСЯ С ДОРОГИ</span></div>
+      <div class="about-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> ЗНАКОМСТВО С «БЛЕСК»</p>
+        <h2>Мы за поездки,<br>а не за <em>галочки.</em></h2>
+        <p class="about-text">«Центр Блеск» помогает находить интересные направления и планировать путешествия с разумным бюджетом. Мы верим, что яркие впечатления не обязательно должны стоить целое состояние.</p>
+        <p class="about-text">Подскажем, с чего начать, сравним варианты и поможем собрать маршрут с учётом твоих пожеланий.</p>
+        <a href="#contacts" class="button button-orange">Давай знакомиться <span>↗</span></a>
+        <div class="about-signature">Больше мира — меньше сомнений. <span>✳</span></div>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="value-item"><span class="value-num">01</span><h3>Разумный бюджет</h3><p>Ищем подходящие варианты и не предлагаем лишнего.</p></div>
+      <div class="value-item"><span class="value-num">02</span><h3>Внимание к деталям</h3><p>Учитываем пожелания, даты и формат отдыха.</p></div>
+      <div class="value-item"><span class="value-num">03</span><h3>Живые впечатления</h3><p>Помогаем открыть места, о которых захочется рассказывать.</p></div>
+    </section>
+
+    <section class="journal section" id="journal">
+      <div class="section-heading journal-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> НЕБОЛЬШОЙ ЖУРНАЛ</p><h2>Мысли <em>в дорогу.</em></h2></div><p class="heading-aside">Немного полезного перед тем, как собрать рюкзак и выключить уведомления.</p></div>
+      <div class="journal-grid">
+        <article class="journal-card"><a class="journal-photo" href="#contacts"><img src="https://images.unsplash.com/photo-1501555088652-021511845b6a?auto=format&fit=crop&w=900&q=85" alt="Путешественник с рюкзаком в горах"></a><div class="journal-info"><span>ПОДГОТОВКА · 4 МИН</span><h3>Как спланировать первую самостоятельную поездку</h3><a href="#contacts">Обсудить с нами <b>↗</b></a></div></article>
+        <article class="journal-card"><a class="journal-photo" href="#contacts"><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=85" alt="Карта и вещи для путешествия"></a><div class="journal-info"><span>БЮДЖЕТ · 3 МИН</span><h3>На чём можно сэкономить, не портя отдых</h3><a href="#contacts">Обсудить с нами <b>↗</b></a></div></article>
+        <article class="journal-card"><a class="journal-photo" href="#contacts"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=85" alt="Озеро и горы в солнечный день"></a><div class="journal-info"><span>ВДОХНОВЕНИЕ · 5 МИН</span><h3>Почему иногда стоит выбрать незнакомый маршрут</h3><a href="#contacts">Обсудить с нами <b>↗</b></a></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacts">
+      <div class="contact-left"><p class="eyebrow"><span class="eyebrow-line"></span> ТВОЯ ИСТОРИЯ МОЖЕТ НАЧАТЬСЯ ЗДЕСЬ</p><h2>Куда хочешь<br><em>сбежать?</em></h2><p>Расскажи, о какой поездке думаешь. Вместе найдём подходящий вариант.</p><div class="contact-note">ОТВЕТИМ И ПОМОЖЕМ С ПЕРВЫМИ ШАГАМИ <span>✳</span></div></div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Как к тебе обращаться?</label><input id="name" name="name" type="text" placeholder="Твоё имя" required>
+        <label for="contact">Куда написать или позвонить?</label><input id="contact" name="contact" type="text" placeholder="Телефон или почта" required>
+        <label for="message">О какой поездке мечтаешь?</label><textarea id="message" name="message" rows="3" placeholder="Например: море в июле, на неделю..." required></textarea>
+        <button class="button button-dark submit-button" type="submit">Отправить заявку <span>↗</span></button>
+        <p class="form-hint" id="formHint">Нажимая кнопку, ты соглашаешься на обработку данных для ответа на обращение.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home"><span class="logo-mark">Б</span><span class="logo-name">центр<br><b>блеск</b></span></a>
+    <p>Путешествуй смелее.<br>Остальное мы обсудим.</p>
+    <div class="footer-links"><a href="#destinations">Направления</a><a href="#about">О компании</a><a href="#journal">Журнал</a><a href="#contacts">Контакты</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> ЦЕНТР БЛЕСК</span><a href="#home">НАВЕРХ ↑</a><span>СДЕЛАНО С ЛЮБОПЫТСТВОМ</span></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
