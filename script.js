@@ -664,8 +664,8 @@ const filterTranslations = {
 const languageSelect = document.getElementById('languageSelect');
 
 const translationTargets = {
-    'topline span:nth-child(1)': 'topline1',
-    'topline span:nth-child(2)': 'topline2',
+    '.topline span:nth-child(1)': 'topline1',
+    '.topline span:nth-child(2)': 'topline2',
 
     '.settings-top strong': 'menu',
     '.language-label': 'language',
