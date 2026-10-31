@@ -835,7 +835,7 @@ const translationTargets = {
     '.footer-links a:nth-child(2)': 'footerNav2',
     '.footer-links a:nth-child(3)': 'footerNav3',
     '.footer-links a:nth-child(4)': 'footerNav4',
-    '.footer-bottom span:nth-child(2)': 'footerBottom1',
+    '.footer-bottom > span:first-child': 'footerBottom1',
     '.footer-bottom a': 'footerBottom2',
     '.footer-bottom span:nth-child(3)': 'footerBottom3'
 };
@@ -1025,6 +1025,13 @@ function applyLanguage(lang) {
                 } else {
                     node.innerHTML = value;
                 }
+            } else if (
+                node.matches('.footer-bottom > span:first-child')
+            ) {
+                // В первом элементе подвала вложен динамический год — сохраняем его.
+                const year = node.querySelector('#year');
+                const yearHTML = year ? year.outerHTML : '';
+                node.innerHTML = `© ${yearHTML} ${value}`;
             } else if (
                 node.matches('.filter') ||
                 node.matches('.faq-list summary') ||
