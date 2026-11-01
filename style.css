@@ -9,3 +9,12 @@
 @media(max-width:900px){.main-nav{gap:18px;font-size:11px}.deals-grid{gap:14px}.deal-card>img{height:175px}.deal-content{padding:15px}.travel-type-grid{grid-template-columns:repeat(2,1fr)}.travel-type-grid a:nth-child(2){border-right:0}.travel-type-grid a:nth-child(-n+2){border-bottom:1px solid #d4cfc4}}
 @media(max-width:650px){.site-header{height:72px}.header-tools{margin-left:auto}.menu-toggle{width:40px;height:40px}.main-nav{display:none}.settings-panel{top:51px}.deals-section{padding-top:65px;padding-bottom:65px}.deals-grid{grid-template-columns:1fr;gap:18px}.deal-card{display:grid;grid-template-columns:39% 1fr}.deal-card>img{height:100%;min-height:185px}.deal-content{padding:15px 13px}.deal-content h3{font-size:18px}.deal-content p{font-size:10px;min-height:0}.tour-finder{padding:65px 5%;grid-template-columns:1fr;gap:30px}.tour-finder-copy h2,.reviews-section h2{font-size:45px;letter-spacing:-2px}.finder-row{gap:9px}.finder-row label{min-height:28px;display:block;line-height:1.4}.travel-types{padding-top:65px;padding-bottom:65px}.travel-type-grid a{min-height:150px;padding:16px 12px}.travel-type-grid b{font-size:16px}.faq-section{padding-top:65px;padding-bottom:65px}.faq-list summary{font-size:12px;padding:18px 3px}.faq-list details p{font-size:11px}.reviews-section{padding:65px 5%;grid-template-columns:1fr;gap:30px}.reviews-note{min-height:150px}.settings-panel{right:0}}
 @media(max-width:390px){.deal-card{grid-template-columns:1fr}.deal-card>img{height:180px;min-height:0}.finder-row{grid-template-columns:1fr}.travel-type-grid a{min-height:145px}}
+
+/* Journal article toggles and review placeholder */
+.journal-read{margin-top:12px;border-top:1px solid #d4cfc4;padding-top:10px}
+.journal-read summary{display:inline-block;cursor:pointer;font-size:10px;font-weight:700;border-bottom:1px solid #d4cfc4;padding-bottom:7px;list-style:none}
+.journal-read summary::-webkit-details-marker{display:none}
+.journal-read summary::after{content:' +';color:#e76a42;margin-left:10px}
+.journal-read[open] summary::after{content:' −'}
+.journal-read p{font-size:11px;line-height:1.75;color:#77766e;margin:13px 0 0;max-width:390px}
+.reviews-coming{font-size:11px;line-height:1.7;color:#493f37;max-width:380px;margin-top:24px}
