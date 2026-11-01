@@ -230,18 +230,18 @@ const translations = {
         'journalTitle3': 'Почему иногда стоит выбрать незнакомый маршрут',
         'journalLink': 'Обсудить с нами',
 
-        'contactEyebrow': 'ТВОЯ ИСТОРИЯ МОЖЕТ НАЧАТЬСЯ ЗДЕСЬ',
-        'contactTitle': 'Куда хочешь<br><em>сбежать?</em>',
-        'contactDesc': 'Расскажи, о какой поездке думаешь. Вместе найдём подходящий вариант.',
-        'contactNote': 'ОТВЕТИМ И ПОМОЖЕМ С ПЕРВЫМИ ШАГАМИ',
+        'contactEyebrow': 'ЕСТЬ ЧТО УТОЧНИТЬ?',
+        'contactTitle': 'Задать<br><em>вопрос.</em>',
+        'contactDesc': 'Не обязательно уже выбирать направление. Напиши, что тебя интересует, — поможем разобраться и подскажем, с чего начать.',
+        'contactNote': 'ОТВЕТИМ НА ВАШИ ВОПРОСЫ',
         'contactNameLabel': 'Как к тебе обращаться?',
         'contactNamePlaceholder': 'Твоё имя',
-        'contactContactLabel': 'Куда написать или позвонить?',
+        'contactContactLabel': 'Куда отправить ответ?',
         'contactContactPlaceholder': 'Телефон или почта',
-        'messageLabel': 'О какой поездке мечтаешь?',
-        'messagePlaceholder': 'Например: море в июле, на неделю...',
-        'submit': 'Отправить заявку',
-        'formHint': 'Нажимая кнопку, ты соглашаешься на обработку данных для ответа на обращение.',
+        'messageLabel': 'Твой вопрос (необязательно)',
+        'messagePlaceholder': 'Например: какие документы нужны для поездки?',
+        'submit': 'Отправить вопрос',
+        'formHint': 'Оставь контакты — ответим на почту или по телефону. Сам вопрос можно не заполнять.',
 
         'footerText': 'Путешествуй смелее.<br>Остальное мы обсудим.',
         'footerNav1': 'Направления',
@@ -405,18 +405,18 @@ const translations = {
         'journalTitle3': 'Why it is sometimes worth choosing an unfamiliar route',
         'journalLink': 'Discuss it with us',
 
-        'contactEyebrow': 'YOUR STORY COULD BEGIN HERE',
-        'contactTitle': 'Where would you<br><em>like to escape?</em>',
-        'contactDesc': 'Tell us about the trip you have in mind. Together, we will find an option that suits you.',
-        'contactNote': 'WE WILL REPLY AND HELP YOU TAKE THE FIRST STEPS',
+        'contactEyebrow': 'HAVE A QUESTION?',
+        'contactTitle': 'Ask a<br><em>question.</em>',
+        'contactDesc': 'You do not have to choose a destination yet. Tell us what you would like to know, and we will help you figure out where to start.',
+        'contactNote': 'WE WILL ANSWER YOUR QUESTIONS',
         'contactNameLabel': 'What should we call you?',
         'contactNamePlaceholder': 'Your name',
-        'contactContactLabel': 'Where can we write or call you?',
+        'contactContactLabel': 'Where should we send our reply?',
         'contactContactPlaceholder': 'Phone or email',
-        'messageLabel': 'What kind of trip are you dreaming of?',
-        'messagePlaceholder': 'For example: a week by the sea in July...',
-        'submit': 'Send request',
-        'formHint': 'By clicking the button, you agree to the processing of your data so we can respond to your enquiry.',
+        'messageLabel': 'Your question (optional)',
+        'messagePlaceholder': 'For example: what documents do I need for the trip?',
+        'submit': 'Send question',
+        'formHint': 'Leave your contact details and we will reply by email or phone. The question field is optional.',
 
         'footerText': 'Travel boldly.<br>We will discuss the rest.',
         'footerNav1': 'Destinations',
@@ -577,18 +577,18 @@ const translations = {
         'journalTitle3': '为什么有时值得选择一条陌生的路线',
         'journalLink': '与我们讨论',
 
-        'contactEyebrow': '你的旅行故事可以从这里开始',
-        'contactTitle': '你想去哪里<br><em>放松一下？</em>',
-        'contactDesc': '告诉我们你正在考虑怎样的旅行。我们会一起寻找合适的方案。',
-        'contactNote': '我们会回复你，并帮助你迈出第一步',
+        'contactEyebrow': '有问题想咨询吗？',
+        'contactTitle': '提出<br><em>问题。</em>',
+        'contactDesc': '你不必现在就选择目的地。告诉我们你想了解什么，我们会帮你解答并建议从哪里开始。',
+        'contactNote': '我们会回答你的问题',
         'contactNameLabel': '我们该如何称呼你？',
         'contactNamePlaceholder': '你的姓名',
-        'contactContactLabel': '我们如何联系你？',
+        'contactContactLabel': '我们该如何回复你？',
         'contactContactPlaceholder': '电话或电子邮箱',
-        'messageLabel': '你梦想中的旅行是什么样的？',
-        'messagePlaceholder': '例如：七月去海边，旅行一周……',
-        'submit': '提交申请',
-        'formHint': '点击按钮即表示你同意我们处理相关信息，以便回复你的咨询。',
+        'messageLabel': '你的问题（选填）',
+        'messagePlaceholder': '例如：旅行需要准备哪些证件？',
+        'submit': '发送问题',
+        'formHint': '留下联系方式，我们会通过邮件或电话回复。问题内容可以不填写。',
 
         'footerText': '勇敢去旅行。<br>其他事情我们一起讨论。',
         'footerNav1': '目的地',
@@ -943,7 +943,7 @@ const placeholders = {
         tourContact: 'Как с тобой связаться?',
         name: 'Твоё имя',
         contact: 'Телефон или почта',
-        message: 'Например: море в июле, на неделю...'
+        message: 'Например: какие документы нужны для поездки?'
     },
     en: {
         tourDates: 'For example, July or dates not decided yet',
@@ -951,7 +951,7 @@ const placeholders = {
         tourContact: 'How can we contact you?',
         name: 'Your name',
         contact: 'Phone or email',
-        message: 'For example: a week by the sea in July...'
+        message: 'For example: what documents do I need for the trip?'
     },
     zh: {
         tourDates: '例如：七月，或日期尚未确定',
@@ -959,7 +959,7 @@ const placeholders = {
         tourContact: '如何联系你？',
         name: '你的姓名',
         contact: '电话或电子邮箱',
-        message: '例如：七月去海边，旅行一周……'
+        message: '例如：旅行需要准备哪些证件？'
     }
 };
 
@@ -1214,7 +1214,7 @@ function currentMessages() {
 async function sendRequest({ name, contact, message }, statusNode, button) {
     const text = currentMessages();
 
-    if (!name || !contact || !message) {
+    if (!name || !contact) {
         if (statusNode) {
             statusNode.textContent = text.required;
         }
